@@ -1,0 +1,24 @@
+{
+  "name": "motor_ctrl-dev",
+  "build": {
+    "dockerfile": "Dockerfile",
+    "context": ".."
+  },
+
+  // VS Code auto-mounts your workspace; no custom "mounts" needed
+  "workspaceFolder": "/workspaces/${localWorkspaceFolderBasename}",
+
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "ms-vscode.cpptools",
+        "ms-vscode.makefile-tools",
+        "twxs.cmake"
+      ]
+    }
+  },
+
+  "postCreateCommand": "sudo apt-get update && sudo apt-get install -y --no-install-recommends g++ make libgpiod-dev i2c-tools git",
+  "remoteUser": "vscode",
+  "features": {}
+}

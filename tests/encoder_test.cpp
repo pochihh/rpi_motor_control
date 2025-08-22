@@ -1,4 +1,4 @@
-#include "Encoder.h"
+#include "../Encoder.h"
 #include <cstdio>
 #include <thread>
 #include <atomic>
