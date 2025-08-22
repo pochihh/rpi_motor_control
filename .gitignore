@@ -1,0 +1,45 @@
+# C++ build artifacts
+*.o
+*.obj
+*.so
+*.dll
+*.exe
+*.out
+*.a
+*.lib
+
+# CMake
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+Makefile
+
+# Build directories
+build/
+bin/
+lib/
+
+# VS Code settings
+.vscode/
+*.code-workspace
+
+# Docker
+*.log
+docker-compose.override.yml
+.env
+.dockerignore
+
+# Devcontainer
+.devcontainer/
+
+# Generated files
+*.swp
+*.swo
+*.bak
+*.tmp
+
+# OS files
+.DS_Store
+Thumbs.db
+
+#

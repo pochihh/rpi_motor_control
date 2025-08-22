@@ -1,11 +1,9 @@
-# Makefile for encoder test
-
 CXX      := g++
-CXXFLAGS := -O2 -std=c++17 -Wall
-LDFLAGS  := -lgpiod -lpthread
+CXXFLAGS := -O2 -std=c++17 -Wall -Wextra -pthread
+LDFLAGS  := -lgpiod
 
-SRC  := enc_test_gpiod.cpp
-BIN  := enc_test_gpiod.out
+SRC := main.cpp util.cpp PID.cpp Encoder.cpp Motoron.cpp Motor.cpp
+BIN := main.out
 
 all: $(BIN)
 
