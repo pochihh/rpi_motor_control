@@ -21,9 +21,9 @@ int main()
               { running = false; });
 
   // --- Hardware init ---
-  Motoron motoron_1("/dev/i2c-1", 0x21);
+  Motoron motoron_1("/dev/i2c-1", 0x15);
   motoron_1.initBasic();
-  // Motoron motoron_2("/dev/i2c-1", 0x22);
+  // Motoron motoron_2("/dev/i2c-1", 0x16);
   // motoron_2.initBasic();
 
   // Build three motors; pass encoder lines (A,B)
