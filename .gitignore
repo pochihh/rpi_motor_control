@@ -42,4 +42,7 @@ docker-compose.override.yml
 .DS_Store
 Thumbs.db
 
-#
+# Other
+*.user
+*.pid
+*.lock
